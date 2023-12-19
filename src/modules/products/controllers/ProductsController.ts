@@ -51,7 +51,7 @@ export default class ProductsController {
       quantity,
     });
 
-    response.json(product);
+    return response.json(product);
   }
 
   public async delete(request: Request, response: Response): Promise<Response> {
