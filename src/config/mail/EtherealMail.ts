@@ -45,7 +45,7 @@ export default class EtherealMail {
         name: to.name,
         address: to.email,
       },
-      subject: 'Recuperação de senha',
+      subject: subject,
       html: await mailTemplate.parse(templateData),
     });
 
